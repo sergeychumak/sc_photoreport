@@ -1,0 +1,29 @@
+html, body {
+  overflow: hidden!important;
+  height: 100%;
+}
+
+.vhHeight { height: 100vh; }
+.percentHeight { height: 100%; }
+.overflowAuto { overflow: auto; }
+.router-link-active{
+  position: relative;
+  &::after {
+    content:"";
+    width: 5px;
+    height: 5px;
+    background: #2196f3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+
+// Build-1
+.isHook { display: none; }
+.tBorder { border-top: 1px solid #dddddd; }
+.bBorder { border-bottom: 1px solid #dddddd; }
+

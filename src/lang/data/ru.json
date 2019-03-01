@@ -1,0 +1,416 @@
+{
+
+  "NAME" : "Фотоотчеты O`Stin",
+
+  "ADMIN": {
+    "LABEL": "Управление",
+    "MENU": {
+      "USERS": "Пользователи",
+      "PHOTO_CATEGORIES": "Категории",
+      "LINES": "Линии",
+      "GOMS": "GOMS",
+      "DOCUMENT_CATEGORY": "Категория документов",
+      "DOCUMENT_TYPES": "Типы документов",
+      "DOCUMENT_SEASONS": "Документы сезонов",
+      "ERRORS": "Ошибки"
+    }
+  },
+
+  "MENU": {
+    "HIDE_PANEL": "Скрыть панель",
+    "SHOW_PHOTO_REPORT": "Просмотр фотоотчетов",
+    "UPLOAD_PHOTO_REPORT": "Загрузить фотоотчет"
+  },
+
+  "PAGE_TITLE": {
+    "USER_REGISTRATION": "Регистрация пользователя",
+    "USER_AUTHENTICATION": "Вход в систему",
+    "UPLOAD_PHOTO_REPORT": "Загрузка фотоотчетов"
+  },
+
+  "FIELDS": {
+    "EMAIL": "Email",
+    "NAME": "ФИО",
+    "NAME_ENG": "ФИО (на английском)",
+    "BUSINESS": "Бизнес",
+    "COUNTRIES": "Страна",
+    "POSITION": "Должность",
+    "ROLE": "Роль",
+    "PASSWORD": "Пароль",
+    "REPEAT_PASSWORD": "Повторите пароль",
+    "REGION": "Регион | Регионы",
+    "DEPARTMENT": "Отделение | Отделения",
+    "SHOP": "Магазин | Магазины"
+  },
+
+  "ERROR": {
+    "REQUIRED":"Поле обязательно для заполнения",
+    "INVALIDEMAIL":"Неверно указан email адрес",
+    "INVALIDREPEATPASSWORD": "Пароли не совпадают",
+    "USERRREGISTRATION": "Извините, мы не можем обработать запрос на вашу регистрацию",
+    "AUTH":"Логин или пароль не правильный"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "TITLE": {
+    "EDIT": "Редактирование",
+    "CREATE": "Создание"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "MENU_ITEMS": {
+    "SHOW_PHOTOREPORT": "Просмотр фототчетов"
+  },
+
+  "TITLE_PAGE": {
+    "SHOW_PHOTOREPORT": "Просмотр фототчетов",
+    "SHOW_IMAGES": "Просмотр фотографии"
+  },
+
+
+
+
+
+
+
+
+
+  "TO_ALL":{},
+  "SPORTMASTER":{
+    "LINES": "Зоны",
+    "CATEGORY": "Категория | Категории",
+    "SUBCATEGORY": "Подкатегория | Подкатегории"
+  },
+  "OSTIN":{
+    "LINES": "Зона",
+    "CATEGORY": "Оборудование",
+    "SUBCATEGORY": "Зона | Зоны"
+  },
+
+
+
+  "CHOOSE_LANGUAGE": "Выберите язык",
+  "CHOOSE_BUSINESS": "Выберите бизнес",
+  "CHOOSE_COUNTRIES": "Выберите страну",
+
+  "SHOP": "Магазин | Магазины",
+  "DEPARTMENT": "Отделение | Отделения",
+  "REGION": "Регион | Регионы",
+  "CATEGORY": "Оборудование | Оборудование",
+  "LINES": "Зоны",
+
+  "ADD_POINT_TO_IMAGE": "Добавить ошибку на фотографию",
+  "EDIT_POINT_TO_IMAGE": "Редактировать ошибку",
+    "ERROR_LOCATION": "Место ошибки",
+    "ERROR_LOCATION_ITEM": "Ошибка",
+  "YES_OR_NO_DELETE": "Вы действительно хотите удалить?",
+  "COMMENTS": "Комментарий",
+
+
+  "LABEL": {
+    "AUTH": "Авторизация",
+    "USER_INFO": "Профиль",
+    "LIST_OF_DOCUMENTS": "Список документов",
+    "USER_REGISTRATION": "Регистрация пользователя"
+  },
+
+
+  "BTN": {
+    "NEXT": "Дальше",
+    "BACK": "Назад",
+    "WELCOME": "Добро пожаловать",
+    "APPLY": "Применить",
+    "ENTER": "Войти",
+    "EXIT": "Выйти",
+    "CANCEL": "Отмена",
+    "CHOOSE": "Выбрать",
+    "CLOSE": "Закрыть",
+    "EDIT": "Редактировать",
+    "DELETE": "Удалить",
+    "CREATE": "Создать",
+    "YES": "Да",
+    "NO": "Нет",
+    "SAVE": "Сохранить",
+    "DOWNLOAD": "Загрузить",
+    "CLEAR": "Очистить",
+    "SELECT_PHOTOS": "Выбрать фотографии",
+    "TO_MAIN": "На главную",
+    "TO_REG": "Регистрация",
+    "ADD_COMMENT": "Добавить комментарий"
+  },
+
+  "EMAIL": "Эл. почта",
+  "PASSWORD": "Пароль",
+
+
+
+
+
+
+
+
+  "LOGIN": "Вход в систему",
+
+  "HELP" : {
+    "LABEL" : "Справка",
+    "ABOUT_THE_PROGRAM": "О программе",
+    "PHOTO_REPORT_PREPARATION_RULES": "Правила фотоотчета",
+    "USER_GUIDE": "Руководство пользователя"
+  },
+
+  "DOCUMENTATION": "Документы",
+  "UPLOAD_PHOTO_REPORT": "Загрузить фотоотчет",
+  "VIEW_PHOTO_REPORTS": "Просмотр фотоотчетов",
+
+  "CONTROL" : {
+    "LABEL" : "Управление",
+    "USERS" : "Пользователи",
+    "GOMS" : "Gom`ы",
+    "CATEGORIES" : "Категории",
+    "TYPES_OF_DOCUMENTS" : "Типы документов",
+    "SEASONS" : "Сезоны",
+    "DOCUMENTS" : "Доументы",
+    "ZONING" : "Зонировнаие",
+    "ERROR_GROUPS": "Место ошибки",
+    "ERRORS": "Ошибки",
+    "DOCUMENTCATEGORY": "Категория документов",
+    "DOCUMENTTYPES": "Типы документов",
+    "DOCUMENTSEASONS": "Документы сезонов",
+
+    "SPORTMASTER": {
+      "LINES" : "Линейка",
+      "PHOTO_CATEGORIES" : "Категории фотографий"
+    },
+
+    "OSTIN": {
+      "LINES" : "Зона",
+      "PHOTO_CATEGORIES" : "Оборудование"
+    }
+  },
+
+  "UPLOAD_FILE": {
+    "LABEL" : "Загрузка фотоотчетов"
+  },
+
+  "PAGINATION": {
+    "PAGE": "Страница",
+    "OF": "из",
+    "TOTAL_RECORDS": "Всего записей",
+    "RECORDS_ON_PAGE": "Записей на странице"
+  },
+
+
+
+  "TABLE": {
+    "_name_": {
+      "CATEGORY_PHOTO": "Категории фотографий",
+      "RULER": "Линейка",
+      "GOMS": "GOMы",
+      "CATEGORY": "Категории",
+      "DOCUMENT_TYPES": "Типы документов",
+      "DOCUMENT_SEASONS": "Сезоны",
+      "DOCUMENT": "Документы",
+      "USERS": "Пользователи"
+    },
+    "CATEGORY_PHOTO": {
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN",
+      "businessAlias": "Бизнес",
+      "countryAlias": "Страна",
+      "category0Alias": "Линейка",
+      "SPORTMASTER": {
+        "category0Alias" : "Линейка"
+      },
+      "OSTIN": {
+        "category0Alias" : "Зона"
+      }
+    },
+    "LINES": {
+      "id": "#ID",
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN",
+      "businessAlias": "Бизнес",
+      "countryAlias": "Страна"
+    },
+    "RULER": {
+      "id": "#ID",
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN",
+      "businessAlias": "Бизнес",
+      "countryAlias": "Страна"
+    },
+    "GOMS": {
+      "id": "#ID",
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN"
+    },
+    "CATEGORY": {
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN"
+    },
+    "DOCUMENTTYPES": {
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN"
+    },
+    "DOCUMENTCATEGORY": {
+      "id": "#ID",
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN"
+    },
+    "DOCUMENTSEASONS": {
+      "id": "#ID",
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN"
+    },
+    "DOCUMENT": {
+      "name": "Имя файла",
+      "gomName": "GOM",
+      "categoryName": "Категория",
+      "typeName": "Тип документа",
+      "seasonName": "Сезон",
+      "langName": "Язык",
+      "lastModified": "Последнее изменение",
+      "expireDate": "Дата истечения",
+      "businessAlias": "Бизнес",
+      "countryAlias": "Страна"
+    },
+    "USERS" : {
+      "email": "Емайл",
+      "name": "Ф.И.О",
+      "name_en": "Ф.И.О (eng)",
+      "position": "Должность",
+      "businessAlias": "Бизнес",
+      "activated": "Профиль активирован",
+      "countryAlias": "Страна",
+      "created": "Дата регистрации",
+      "departmentAlias": "Департамент",
+      "lastVisited": "Последний вход",
+      "regionAlias": "Регион",
+      "shopAlias": "Магазин",
+      "shopNumber": "№ магазина",
+      "password": "Пароль"
+    },
+    "ERROR_GROUPS": {
+      "name": "Наименование_RU",
+      "name_en": "Наименование_EN",
+      "name_zh": "Наименование_CN",
+      "business": "Бизнес",
+      "order": "Порядок"
+    },
+    "ERRORS": {
+      "id": "ID",
+      "active": "Active",
+      "labelRu": "Наименование RU",
+      "labelEn": "Наименование EN",
+      "labelZh": "Наименование CN",
+      "equipmentId": "Оборудование",
+      "order": "Порядок"
+    },
+    "ZONING": {
+      "name": "Имя файла",
+      "shopNumber": "Номер магазина"
+    }
+  },
+
+
+
+  "ERR": {
+    "ATTEMPT_TO_CHOOSE_DEPARTMENT" : "Список будет доступен только после выбора Региона",
+    "ATTEMPT_TO_CHOOSE_SHOP": "Список будет доступен только после выбора Департамента",
+    "NO_VALUE_TO_SELECT": "Нет значений для выбора"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "NAME_SITE": "Фотоотчет вер.3",
+
+  "ABOUT" : {
+    "LABEL" : "Фотоотчет III",
+    "TEXT" : "По возникшим вопросам обращайтесь в СГЛ",
+    "ABOUT_THE_PROGRAM": "О программе",
+    "PHOTO_REPORT_PREPARATION_RULES": "Правила подготовки фотоотчета",
+    "USER_GUIDE": "Руководство пользователя"
+  },
+
+
+  "PHOTOREPORT": "Фотоотчеты",
+
+  "TABLE_KEY" : {
+    "DOCUMENTATION": {
+      "NAME_FILE": "Имя файла",
+      "GOM": "GOM",
+      "CATEGORY": "Категория",
+      "DOCUMENT_TYPE": "Тип документа",
+      "SEASON": "Сезон",
+      "LANGUAGE": "Язык",
+      "LAST_CHANGE": "Последнее изменение",
+      "KEEP_IT_UP": "Храним до"
+    }
+  },
+
+  "RESET_FILTERS": "Сбросить фильтры"
+,
+
+
+
+  "SELECT_REPORTING_DATE": "Выберите дату отчетности",
+  "FOUND": "найдено",
+  "ZONING": "Зонирование"
+}

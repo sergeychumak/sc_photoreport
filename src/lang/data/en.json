@@ -1,0 +1,307 @@
+{
+  "NAME_OSTIN": "Photoreport O`Stin",
+
+  "MENU_ITEMS": {
+    "SHOW_PHOTOREPORT": "Show photoreports"
+  },
+
+  "TITLE_PAGE": {
+    "SHOW_PHOTOREPORT": "Show photoreport",
+    "SHOW_IMAGES": "Show images"
+  },
+
+
+
+  "TO_ALL":{},
+  "SPORTMASTER":{
+    "LINES": "Lines",
+    "CATEGORY": "Category | Categories ",
+    "SUBCATEGORY": "Subcategory | Subcategories"
+  },
+  "OSTIN":{
+    "LINES": "Zone",
+    "CATEGORY": "Equipment | Equipment`s ",
+    "SUBCATEGORY": "Zone | Zone`s"
+  },
+
+  "FIELDS": {
+    "EMAIL": "Email",
+    "NAME": "Full Name",
+    "NAME_ENG": "Full Name (English)",
+    "BUSINESS": "Business",
+    "COUNTRIES": "Country",
+    "POSITION": "Position",
+    "ROLE": "Role",
+    "PASSWORD": "Password",
+    "REGION": "Region | Region`s",
+    "DEPARTMENT": "Department | Department`s",
+    "SHOP": "Shop | Shop`s"
+  },
+
+
+
+  "CHOOSE_LANGUAGE": "Choose language",
+  "CHOOSE_BUSINESS": "Choose business",
+  "CHOOSE_COUNTRIES": "Choose countries",
+
+  "SHOP": "Shop | Shop`s",
+  "DEPARTMENT": "Department | Department`s",
+  "REGION": "Region | Region`s",
+  "CATEGORY": "Category | Categories ",
+  "LINES": "Lines",
+
+  "ADD_POINT_TO_IMAGE": "Add error to image",
+  "EDIT_POINT_TO_IMAGE": "Edit error",
+    "ERROR_LOCATION": "Error location",
+    "ERROR_LOCATION_ITEM": "Error",
+  "YES_OR_NO_DELETE": "Do you really want to delete?",
+  "COMMENTS": "Comment",
+
+
+  "LABEL": {
+    "AUTH": "Authorization",
+    "USER_INFO": "Profile",
+    "LIST_OF_DOCUMENTS": "List of documents",
+    "USER_REGISTRATION": "User registration"
+  },
+
+  "BTN": {
+    "NEXT": "Next",
+    "BACK": "Back",
+    "WELCOME": "Welcome",
+    "APPLY": "To apply",
+    "ENTER": "Enter",
+    "EXIT": "Exit",
+    "CANCEL": "Cancel",
+    "CHOOSE": "Choose",
+    "CLOSE": "Close",
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "CREATE": "Create",
+    "YES": "Yes",
+    "NO": "No",
+    "SAVE": "Save",
+    "DOWNLOAD": "Download",
+    "CLEAR": "Clear",
+    "SELECT_PHOTOS": "Select photos",
+    "TO_MAIN": "To main",
+    "TO_REG": "Registration",
+    "ADD_COMMENT": "Add comment"
+  },
+
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+
+  "ERROR": {
+    "AUTH":"Login or password is not correct"
+  },
+
+
+
+
+  "LOGIN": "Login",
+
+  "HELP" : {
+    "LABEL" : "Help",
+    "ABOUT_THE_PROGRAM": "About",
+    "PHOTO_REPORT_PREPARATION_RULES": "Rules",
+    "USER_GUIDE": "User guide"
+  },
+
+  "DOCUMENTATION": "Documents",
+  "UPLOAD_PHOTO_REPORT": "Upload photo report",
+  "VIEW_PHOTO_REPORTS": "View photo reports",
+
+  "CONTROL" : {
+    "LABEL" : "Admin",
+    "USERS" : "Users",
+    "GOMS" : "Gom`s",
+    "CATEGORIES" : "Categories",
+    "TYPES_OF_DOCUMENTS" : "Types of documents",
+    "SEASONS" : "Seasons",
+    "DOCUMENTS" : "Documents",
+    "ZONING" : "Zoning",
+    "ERROR_GROUPS": "Error groups",
+    "ERRORS": "Errors",
+    "DOCUMENTCATEGORY": "Documents category",
+    "DOCUMENTTYPES": "Documents types",
+    "DOCUMENTSEASONS": "Documents seasons",
+
+    "SPORTMASTER": {
+      "LINES" : "Lines",
+      "PHOTO_CATEGORIES" : "Photo categories"
+    },
+
+    "OSTIN": {
+      "LINES" : "Zone",
+      "PHOTO_CATEGORIES" : "Equipment"
+    }
+
+  },
+
+
+  "UPLOAD_FILE": {
+    "LABEL" : "Upload file"
+  },
+
+  "PAGINATION": {
+    "PAGE": "Page",
+    "OF": "of",
+    "TOTAL_RECORDS": "Total records",
+    "RECORDS_ON_PAGE": "Records on page"
+  },
+
+
+
+  "TABLE": {
+    "USERS" : {
+      "email": "email",
+      "name": "Name (ru)",
+      "name_en": "Name (eng)",
+      "position": "Position",
+      "businessAlias": "Business",
+      "activated": "Activated",
+      "countryAlias": "Country",
+      "created": "Created",
+      "departmentAlias": "Department",
+      "lastVisited": "Last visited",
+      "regionAlias": "Region",
+      "shopAlias": "Shop",
+      "shopNumber": "№ shop",
+      "password": "Password"
+    },
+    "CATEGORY_PHOTO": {
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN",
+      "businessAlias": "Business",
+      "countryAlias": "Country",
+      "SPORTMASTER": {
+        "category0Alias" : "Lines"
+      },
+      "OSTIN": {
+        "category0Alias" : "Zone"
+      }
+    },
+    "ERROR_GROUPS": {
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN",
+      "business": "Business",
+      "order": "Order"
+    },
+    "ERRORS": {
+      "id": "ID",
+      "active": "Active",
+      "labelRu": "Name RU",
+      "labelEn": "Name EN",
+      "labelZh": "Name CN",
+      "equipmentId": "Equipment",
+      "order": "Order"
+    },
+    "LINES": {
+      "id": "#ID",
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN",
+      "businessAlias": "Business",
+      "countryAlias": "Country"
+    },
+    "DOCUMENTCATEGORY": {
+      "id": "#ID",
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN"
+    },
+    "DOCUMENTTYPES": {
+      "id": "#ID",
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN"
+    },
+    "DOCUMENTSEASONS": {
+      "id": "#ID",
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN"
+    },
+    "GOMS": {
+      "id": "#ID",
+      "name": "Name RU",
+      "name_en": "Name EN",
+      "name_zh": "Name CN"
+    },
+    "ZONING": {
+      "name": "Name file",
+      "shopNumber": "Shop number"
+    }
+  },
+
+  "TITLE": {
+    "EDIT": "Editing",
+    "CREATE": "Making"
+  },
+
+  "ERR": {
+    "ATTEMPT_TO_CHOOSE_DEPARTMENT" : "The list will be available only after selecting the Region value",
+    "ATTEMPT_TO_CHOOSE_SHOP": "The list will be available only after selecting the Department value",
+    "NO_VALUE_TO_SELECT": "No value to select"
+  },
+
+  "PAGES": {
+    "DOWNLOAD_PHOTO_REPORT": {
+      "LABEL": "Download photo report"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "NAME_SITE": "Photoreport",
+
+  "ABOUT" : {
+    "LABEL" : "Photoreport III",
+    "TEXT" : "If you have any questions, please contact the HotLine",
+    "ABOUT_THE_PROGRAM": "About the program",
+    "PHOTO_REPORT_PREPARATION_RULES": "Photo report preparation rules",
+    "USER_GUIDE": "User guide"
+  },
+
+
+  "PHOTOREPORT": "Photoreport",
+
+  "TABLE_KEY" : {
+    "DOCUMENTATION": {
+      "NAME_FILE": "File name",
+      "GOM": "GOM",
+      "CATEGORY": "Category",
+      "DOCUMENT_TYPE": "Document type",
+      "SEASON": "Season",
+      "LANGUAGE": "Language",
+      "LAST_CHANGE": "Last change",
+      "KEEP_IT_UP": "Keep it up"
+    }
+  },
+
+  "RESET_FILTERS": "Reset filters"
+,
+
+
+
+  "SELECT_REPORTING_DATE": "Select reporting date",
+  "FOUND": "found",
+  "ZONING": "Zoning"
+}
