@@ -65,7 +65,7 @@
 
         resetSvgImage: false,
         pointsSvgImage: [],
-        sizeSvgImage: 550,
+        sizeSvgImage: 750,
 
         shopId: "",
         shopNumber: "",
@@ -118,8 +118,6 @@
         get_list_problem_point: "get_list_problem_point",
         update_problem_point: "update_problem_point"
       }),
-
-
 
       left: function(){
         var res = this.index - 1

@@ -6,9 +6,6 @@ import i18n from './lang/lang'
 import VueCookies from 'vue-cookies'
 import * as directives from 'vuetify/es5/directives'
 
-// import 'material-design-icons-iconfont/dist/material-design-icons.css'
-// import '@mdi/font/css/materialdesignicons.css'
-
 import {
   Vuetify,
   VApp,
@@ -40,7 +37,6 @@ import {
 } from 'vuetify'
 
 Vue.use(Vuetify, {
-  // iconfont: 'mdi',
   components: {
     VApp,
     VGrid,

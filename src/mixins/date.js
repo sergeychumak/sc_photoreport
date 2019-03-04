@@ -2,6 +2,8 @@ export const convertDate = {
   methods: {
     convertTimeToDate(t, format) {
 
+      console.log(t)
+      
         var date = new Date(t);
 
         var hours_ = date.getHours();

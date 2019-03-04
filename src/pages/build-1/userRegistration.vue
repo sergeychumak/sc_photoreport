@@ -17,7 +17,10 @@
 
     <v-flex shrink>
       <v-alert :value="alert.error" type="error" transition="scale-transition">
-        {{$t('ERROR.USERRREGISTRATION')}}
+        <div>{{$t('ERROR.USERRREGISTRATION')}}</div>
+        <template v-if="Object.keys(errorObj).length > 0">
+          <div class="caption" v-for="item in errorObj">{{item}}</div>
+        </template>
       </v-alert>
     </v-flex>
 
@@ -64,7 +67,7 @@
         <v-select
           :items="list.roles"
           v-model="fieldRole"
-          item-text="name"
+          item-text="alias"
           item-value="id"
           solo
           :rules="[rules.required]"
@@ -155,6 +158,8 @@
         alert: {
           error: false
         },
+        errorObj: "",
+        errorTimer: 0,
 
         fieldName: null,
         fieldEmail: null,
@@ -267,10 +272,16 @@
             this.$route.push({name: 'main'})
           }
           else{
+            if (res.message){
+              this.errorObj = {"err" : res.message}
+            }else{
+              this.errorObj = res.errors
+            }
+
             this.alert.error = true
-            setTimeout(()=>{
-              this.alert.error = false
-            },5000)
+            // setTimeout(()=>{
+            //   this.alert.error = false
+            // },this.errorTimer)
           }
         })
       }
@@ -293,7 +304,7 @@
         return {
           businessId: this.fieldBusiness,
           countryId: this.fieldCountries,
-          email: this.fieldEmail,
+          email: this.fieldEmail.toLowerCase(),
           name: this.fieldName,
           name_en: this.fieldNameEn,
           password: this.fieldPassword,

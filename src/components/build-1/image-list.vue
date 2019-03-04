@@ -39,7 +39,12 @@
       showImage: function(photoId){
         this.$router.push({
           name: "showImage",
-          params: Object.assign( {}, this.$route.params),
+          params: Object.assign( {},
+            this.$route.params,
+            {
+              date: this.FACETS_CURRENT_DATE
+            }
+          ),
           query: {
             photoId: photoId
           }
@@ -49,7 +54,8 @@
     computed: {
       ...mapGetters( "master", {
         LOADING: "images_loading",
-        list: "images_list"
+        list: "images_list",
+        FACETS_CURRENT_DATE: "facets_current_date"
       })
     }
   }

@@ -8,6 +8,7 @@ const baseWebpackConfig = require('./webpack.base.conf')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const env = require('../config/dev.env')
 
@@ -69,7 +70,16 @@ const webpackConfig2Distr = merge(baseWebpackConfig,configDefault, {
       cssProcessorOptions: config.build.productionSourceMap
         ? { safe: true, map: { inline: false } }
         : { safe: true }
-    })
+    }),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        // to: config.dev.assetsSubDirectory,
+        to: path.resolve(__dirname, './../../src/main/webapp/resources/new-dev/static'),
+        ignore: ['.*']
+      }
+    ])
   ]
 }
 )

@@ -24,7 +24,7 @@
           <v-spacer></v-spacer>
           <h5>
             {{item.creator.alias}}<br/>
-            {{ convertTimeToDate(item.creator.created, "DD/MM/YYYY") }}
+            {{ convertTimeToDate(item.createdTimestamp, "DD/MM/YYYY") }}
           </h5>
         </v-card-actions>
         <div class="pl-2 pr-2 pt-0 pb-0">

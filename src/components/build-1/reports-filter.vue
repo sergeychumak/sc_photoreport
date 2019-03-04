@@ -154,6 +154,7 @@ export default {
           if (this.$route.params.date){
             this.SET_CURRENT_DATE(this.$route.params.date).then(()=>{
               this.FASETS_GET_LIST(Object.assign({}, this.$route.params, this.resultData))
+              this.set_images_list([])
             })
           }else{
             this.apply()
@@ -170,7 +171,8 @@ export default {
       LINES_GET_LIST:       "receive_lines_list",
       CATEGORIES_GET_LIST:  "receive_category_list",
       FASETS_GET_LIST:      "receive_facets_list",
-      SET_CURRENT_DATE: "facets_set_current_date"
+      SET_CURRENT_DATE: "facets_set_current_date",
+      set_images_list: "set_images_list"
     }),
 
 
@@ -247,6 +249,7 @@ export default {
 
       this.SET_CURRENT_DATE(null).then(()=>{
         this.FASETS_GET_LIST(Object.assign({}, this.$route.params, this.resultData))
+        this.set_images_list([])
       })
 
     }

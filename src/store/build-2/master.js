@@ -119,7 +119,15 @@ const actions = {
           };
           axios(options)
             .then(res => {
-              resolve(res.data)
+              // console.log(res.data.data)
+              var result= {}
+              result['data'] = res.data.data.filter(el=>{
+                if (el.name == 'REGMERCH' || el.name == 'SHOP')
+                 return true
+                return false
+              })
+              // console.log(result)
+              resolve(result)
             });
         })
     })
@@ -323,7 +331,7 @@ const actions = {
 
             axios(options)
               .then(res => {
-                commit( "facets_receive_list", res.data.data )
+                commit( "facets_receive_list", res.data.data.reverse() )
                 commit( "facets_current_filter", inData )
                 commit( "facets_loading", false )
                 resolve()
@@ -634,6 +642,10 @@ const actions = {
     })
   },
 
+  // mutations sets
+  set_images_list: ({commit}, list) => {
+    commit('images_list', list)
+  }
 }
 
 const mutations = {

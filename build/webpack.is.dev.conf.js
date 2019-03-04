@@ -2,12 +2,14 @@
 const path = require('path')
 const utils = require('./utils')
 const webpack = require('webpack')
-const config = require('../config')
+// const config = require('../config')
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const env = require('../config/dev.env')
 
@@ -48,7 +50,16 @@ var configDefault = {
       async: 'vendor-async',
       children: true,
       minChunks: 3
-    })
+    }),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        // to: config.dev.assetsSubDirectory,
+        to: path.resolve(__dirname, './../../target/fosm3/resources/new-dev/static'),
+        ignore: ['.*']
+      }
+    ])
   ]
 };
 

@@ -55,7 +55,7 @@
 
       enter: function(){
         this.user_enter({
-          email: this.email,
+          email: this.email.toLowerCase(),
           password: this.password
         }).then((res)=>{
           if (res){
