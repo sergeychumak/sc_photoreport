@@ -5,7 +5,6 @@ import api from './api'
 
 Vue.use(Vuex)
 
-import photo from './build-1/photo'
 import points from './build-1/points'
 import master from './build-2/master'
 
@@ -21,7 +20,6 @@ const store = new Vuex.Store({
   ],
   modules: {
     api,
-    photo,
     points,
     master
   },

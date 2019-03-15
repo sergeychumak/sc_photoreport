@@ -145,7 +145,7 @@ export default {
       var runApply = false
       Object.keys(this.$route.params).map((el)=>{
         var value = this.$route.params[el]
-        if (!isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value)))
+        if (!isNaN(parseFloat(value)) && isFinite(value))
           runApply = true
       })
       this.$nextTick(function () {
@@ -176,8 +176,8 @@ export default {
     }),
 
 
-    __isInt: function(value){
-      return  ( !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value)))
+    __isInt: function(value) {
+      return !isNaN(parseFloat(value)) && isFinite(value);
     },
     fillLines: function(){
       return new Promise(resolve =>{

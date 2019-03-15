@@ -38,7 +38,7 @@
               <span
                 style="cursor: pointer"
                 class="caption brown--text text--lighten-3 pr-1"
-                @click="exit">{{$t('BTN.EXIT')}}</span>
+                @click="clk_exit()">{{$t('BTN.EXIT')}}</span>
             </v-list-tile-sub-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -157,10 +157,11 @@
     ...mapActions("master", {
       exit: "user_exit"
     }),
-    clk_exit: function(){
-      this.exit().then(()=>{
-        this.$router.push({ name: "main" })
-      })
+    clk_exit() {
+      this.exit()
+        .then(() => {
+          this.$router.push({name: 'userAuthentication'});
+        });
     }
   },
   computed: {

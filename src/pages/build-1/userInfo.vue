@@ -11,7 +11,7 @@
     <!--ACTION-->
     <div class="isHook">
       <div ref="isHook__Actions">
-        <v-btn flat small color="primary" @click="clk_edit">{{$t('BTN.EDIT')}}</v-btn>
+        <v-btn flat small color="primary" @click="clk_edit">{{$t('BTN.SAVE')}}</v-btn>
       </div>
     </div>
 
@@ -144,13 +144,10 @@
         GET_LIST_ROLES: 'receive_roles_list'
       }),
 
-      clk_edit: function(){
+      clk_edit() {
+        /*let a = this.roleList.filter(el => el.name == this.USER_INFO.rolesCodes[0]);*/
 
-         let a = this.roleList.filter(el=>{
-           return el.name = this.USER_INFO.rolesCodes[0]
-         })
-
-        var data = Object.assign({},{
+        let data = Object.assign({}, {
           activated: true,
           businessId: this.form.business,
           countryId: this.form.countries,
@@ -160,16 +157,20 @@
           name_en: this.form.name_en,
           password: this.form.password,
           position: this.form.position,
-          shopId: this.USER_INFO.shopNumber,
-          roleId: a[0].id
-        })
+          shopId: this.USER_INFO.shopNumber/*,
+          roleId: a[0].id*/
+        });
 
-        this.$store.dispatch("master/get_url",  { url: "users.update" })
-          .then((url)=>{
-            axios.post(url,data).then((res)=>{
-            })
-          })
-
+        this.$store.dispatch('master/get_url', {url: 'users.update'})
+          .then(url => {
+            axios.post(url, data)
+              .then(result => {
+                if (result.data && result.data.success) {
+                  this.$store.dispatch('master/user_info', data.email)
+                    .then(result => {});
+                }
+            });
+          });
       }
     },
     computed: {

@@ -303,8 +303,9 @@ const actions = {
 
       commit("facets_loading", true)
 
-      function isInt(value){
-        return  ( !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value)))
+      /*ToDo: код !isNaN(parseFloat(value)) && isFinite(value) используется в 6 местах, свести к одному*/
+      function isInt(value) {
+        return !isNaN(parseFloat(value)) && isFinite(value);
       }
 
       let data = new FormData();
@@ -313,6 +314,7 @@ const actions = {
       data.append('page', 1);
       data.append('start', 0);
       data.append('limit', 25);
+      console.log(inData)
       if (isInt(inData.line)) data.append('category0Id', inData.line);
       if (isInt(inData.category)) data.append('categoryId', inData.category);
       if (isInt(inData.region)) data.append('regionId', inData.region);
@@ -367,8 +369,8 @@ const actions = {
   images_receive_list: ({dispatch, rootGetters, commit}) => {
     return new Promise((resolve) => {
 
-      function isInt(value){
-        return  ( !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value)))
+      function isInt(value) {
+        return !isNaN(parseFloat(value)) && isFinite(value);
       }
 
       commit("images_loading",true)

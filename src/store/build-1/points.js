@@ -30,8 +30,6 @@ const actions = {
     })
   },
 
-
-
   get_list_problem_point: ({dispatch}, inData ) => {
     return new Promise((resolve) => {
       dispatch('api/send_get_request', {
@@ -43,23 +41,6 @@ const actions = {
         })
     })
   },
-  //
-  // /** Получаем группу */
-  // GET_LIST_PROBLEM_LOCATION: ({dispatch}) => {
-  //   return new Promise((resolve) => {
-  //     dispatch('api/send_post_request', {
-  //       url: "point.location.list"
-  //     }, {root: true} )
-  //     .then( res => {
-  //       resolve(res.data)
-  //     })
-  //   })
-  // },
-
-  
-
-
-
 
   /** Обновляесмя  */
   update_problem_point: ({dispatch}, inData) => {

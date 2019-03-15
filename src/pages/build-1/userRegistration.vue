@@ -24,6 +24,22 @@
       </v-alert>
     </v-flex>
 
+    <v-flex shrink>
+      <v-alert :value="alert.success" type="success" transition="scale-transition">
+        <div>
+          На Ваш почтовый ящик отправлено сообщение, содержащее ссылку для подтверждения e-mail адреса.<br/>
+          Пожалуйста, перейдите по ссылке для завершения регистрации.
+          <br/>
+          <br/>
+          <v-btn small class="ma-0" @click="enter">Войти в систему</v-btn>
+
+        </div>
+      </v-alert>
+    </v-flex>
+
+
+
+
 
     <v-flex class="overflowAuto" >
 
@@ -156,7 +172,8 @@
       return {
 
         alert: {
-          error: false
+          error: false,
+          success: false
         },
         errorObj: "",
         errorTimer: 0,
@@ -242,6 +259,10 @@
         user_registration: "user_registration"
       }),
 
+      enter: function(){
+        this.$router.push({name: 'userAuthentication'})
+      },
+
       receive_regions: function(){
         this.loading.regions = true
         this.receive_regions_list().then((res)=>{
@@ -269,7 +290,21 @@
       userRregistration: function(){
         this.user_registration(this.resultData).then((res)=>{
           if (res.success){
-            this.$route.push({name: 'main'})
+            this.alert.success = true
+            this.alert.error = false
+
+            this.fieldName=  null
+            this.fieldEmail=  null
+            this.fieldNameEn=  null
+            this.fieldPosition=  null
+            this.fieldRole=  null
+            this.fieldRole_name=  null
+            this.fieldPassword=  null
+            this.fieldRepeatPassword=  null
+            this.fieldRegion=  null
+            this.fieldDepartment=  null
+            this.fieldShop=  null
+
           }
           else{
             if (res.message){
@@ -279,9 +314,7 @@
             }
 
             this.alert.error = true
-            // setTimeout(()=>{
-            //   this.alert.error = false
-            // },this.errorTimer)
+
           }
         })
       }
@@ -304,7 +337,7 @@
         return {
           businessId: this.fieldBusiness,
           countryId: this.fieldCountries,
-          email: this.fieldEmail.toLowerCase(),
+          email: String(this.fieldEmail).toLowerCase(),
           name: this.fieldName,
           name_en: this.fieldNameEn,
           password: this.fieldPassword,

@@ -19,10 +19,10 @@
       <v-card width="500" flat class="ma-4">
 
         <div>{{$t("FIELDS.EMAIL")}} *</div>
-        <v-text-field solo v-model="email" hide-details></v-text-field>
+        <v-text-field solo v-model="email" hide-details @keyup.enter="enter()"></v-text-field>
 
         <div class="mt-4">{{$t("FIELDS.PASSWORD")}} *</div>
-        <v-text-field type="password" password solo v-model="password" hide-details></v-text-field>
+        <v-text-field type="password" password solo v-model="password" hide-details @keyup.enter="enter()"></v-text-field>
 
         <v-alert class="mt-4" :value="alert.error" type="error" transition="scale-transition">
           {{$t('ERROR.AUTH')}}
@@ -43,8 +43,8 @@
         alert: {
           error: false
         },
-        email: null,
-        password: null
+        email: '',
+        password: ''
       }
     },
     methods:{
